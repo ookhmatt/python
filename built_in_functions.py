@@ -1,3 +1,4 @@
+from lib.matma import rownanie_kwadratowe
 from lib.person import data_ur_from_pesel
 
 
@@ -108,5 +109,12 @@ v += n
     podstawa =[11,22.3,41.2]
     wysokosci =[21,32.2,51.2]
 
+    #test równanie kwadratowe
+    a,b,c = 1,1,1 #wynik None
+    print(rownanie_kwadratowe(a,b,c))
+    a,b,c = 1,2,1 #wynik -1
+    print(rownanie_kwadratowe(a,b,c))
+    a,b,c =1,3,1 #wynik tupla 2-ch liczb
+    print(rownanie_kwadratowe(a,b,c))
 
 
